@@ -1,7 +1,7 @@
 package extend.phone;
 
-public interface Phone {
-    int MAX_NUMBER_DIGITS = 11;
-
-    public void call(String number);
+// Cameraインターフェースの宣言
+public interface Camera {
+    // public abstractが自動で追加される（抽象メソッド）
+    public void takePicture();
 }
