@@ -1,3 +1,6 @@
+// java.lang.Mathを読み込んでください
+import java.lang.Math;
+
 class Person01 {
   public static void printData(String name, int age, double height, double weight) {
     System.out.println("私の名前は" + name + "です");
@@ -9,7 +12,8 @@ class Person01 {
     double bmi = bmi(height, weight);
 
     // 変数bmiを用いて、「BMIは◯◯です」と出力してください
-    System.out.println("BMIは" + bmi + "です");
+    // Mathクラスのroundメソッドを用いて、BMIを四捨五入して出力するようにしてください
+    System.out.println("BMIは" + Math.round(bmi) + "です");
 
     // isHealthyメソッドの結果で条件分岐を行ってください
     if (isHealthy(bmi)) {
