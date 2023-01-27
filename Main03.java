@@ -16,6 +16,13 @@ class Main {
     // 変数bmiを用いて、「BMIは◯◯です」と出力してください
     System.out.println("BMIは" + bmi + "です");
     
+    // isHealthyメソッドの結果で条件分岐を行ってください
+    if (isHealthy(bmi)) {
+      System.out.println("健康です");
+    } else {
+      System.out.println("健康ではありません");
+    }
+    
   }
 
   public static String fullName(String firstName, String lastName) {
@@ -31,6 +38,11 @@ class Main {
     return weight / height / height;
   }
   
+  // isHealthyメソッドを定義してください 
+  public static boolean isHealthy(double bmi) {
+    return bmi >= 18.5 && bmi < 25.0;
+  }
+  
 }
 
 // 実行結果
@@ -40,9 +52,11 @@ class Main {
 身長は1.6mです
 体重は50.0kgです
 BMIは19.53125です
+健康です
 私の名前はJohn Christopher Smithです
 年齢は65歳です
 身長は1.75mです
 体重は80.0kgです
 BMIは26.122448979591837です
+健康ではありません
 */ 
