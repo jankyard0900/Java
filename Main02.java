@@ -1,13 +1,10 @@
 class Main {
   public static void main(String[] args) {
-    // fullNameメソッドの結果を変数nameに代入してください
-    String name = fullName("Kate", "Jones");
-    
     // printDataの引数を書き換えてください
-    printData("Kate Jones", 27);
+    printData(fullName("Kate", "Jones"), 27);
     
-    // こちらは書き換えないでください
-    printData("John Christopher", 65);
+    // 2つ目のfullNameメソッドを用いて、printDataの引数を書き換えてください
+    printData(fullName("John", "Christopher", "Smith"), 65);
   }
   
   // 年齢に関する引数を受け取れるようにしてください
@@ -21,6 +18,12 @@ class Main {
     // 呼び出し元に値を返す戻り値設定
     return firstName + " " + lastName;
   }
+  
+  // 2つ目のfullNameメソッドを定義してください
+  public static String fullName(String firstName, String middleName, String lastName) {
+    // 戻り値設定
+    return firstName + " " + middleName + " " + lastName;
+  }
   }
 }
 
@@ -28,6 +31,6 @@ class Main {
 /*
 私の名前はKata Jonesです
 年齢は27歳です
-私の名前はJohn Christopherです
+私の名前はJohn Christopher Smithです
 年齢は65歳です
 */ 
