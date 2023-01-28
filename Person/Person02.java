@@ -25,7 +25,12 @@ class Person {
   }
 
   public String fullName() {
-    return this.firstName + " " + this.lastName;
+    // 以下を、middleNameがない場合とある場合で条件分岐を行ってください
+    if (this.middleName == null) {
+      return this.firstName + " " + this.lastName;
+    } else {
+      return this.firstName + " " + this.middleName + " " + this.lastName;
+    }
   }
 
   public void printData() {
