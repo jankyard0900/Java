@@ -1,12 +1,12 @@
 class Person {
-  public static int count = 0;
-  public String firstName;
+  private static int count = 0;
+  private String firstName;
   // インスタンスフィールドmiddleNameを定義してください
-  public String middleName;
+  private String middleName;
 
-  public String lastName;
-  public int age;
-  public double height, weight;
+  private String lastName;
+  private int age;
+  private double height, weight;
 
   Person(String firstName, String lastName, int age, double height, double weight) {
     Person.count++;
