@@ -19,13 +19,9 @@ class Person {
 
   // middleNameを受け取るコンストラクタを定義してください
   Person(String firstName, String middleName, String lastName, int age, double height, double weight) {
-    Person.count++;
-    this.firstName = firstName;
-    this.lastName = lastName;
+    // this()を用いて、コンストラクタを呼び出してください
+    this(firstName, lastName, age, height, weight);
     this.middleName = middleName;
-    this.age = age;
-    this.height = height;
-    this.weight = weight;
   }
 
   public String fullName() {
