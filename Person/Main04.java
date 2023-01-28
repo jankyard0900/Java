@@ -8,5 +8,8 @@ class Main {
     person2.printData();
 
     Person.printCount();
+    
+    // person2に対して、getMiddleNameメソッドを呼び出し、「person2のミドルネームは◯◯です」と出力してください
+    System.out.println("person2のミドルネームは" + person2.getMiddleName() + "です");
   }
 }
