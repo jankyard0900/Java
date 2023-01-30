@@ -2,6 +2,12 @@ class Vehicle {
   private String name;
   private String color;
   private int distance = 0;
+  
+  // Vehicleクラスのコンストラクタを定義してください
+  Vehicle(String name, String color) {
+    this.name = name;
+    this.color = color;
+  }
 
   public String getName() {
     return this.name;

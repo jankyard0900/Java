@@ -1,5 +1,11 @@
 class Car extends Vehicle {
   private int fuel = 50;
+  
+  // Carクラスのコンストラクタを定義し、
+  // superを用いてスーパークラスのコンストラクタを呼び出してください
+  Car(String name, String color) {
+    super(name, color);
+  }
 
   public int getFuel() {
     return this.fuel;

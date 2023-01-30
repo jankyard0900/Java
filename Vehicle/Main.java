@@ -3,12 +3,8 @@ import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    Car car = new Car();
-    car.setName("フェラーリ");
-    car.setColor("赤");
-    Bicycle bicycle = new Bicycle();
-    bicycle.setName("ビアンキ");
-    bicycle.setColor("緑");
+    Car car = new Car("フェラーリ", "赤");
+    Bicycle bicycle = new Bicycle("ビアンキ", "緑");
 
     System.out.println("【車の情報】");
     car.printData();
